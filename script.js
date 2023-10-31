@@ -7,13 +7,14 @@ select.addEventListener('change', function(e) {
 });
 
 dataInput.oninput = function() {
-  if (select.value === "Value-1") {
-    resultInput.value = (dataInput.value * 20).toFixed(2);
-  } else if (select.value === "Value-2") {
-    resultInput.value = (dataInput.value * 30).toFixed(2);
-  } else if (select.value === "Value-3") {
-    resultInput.value = (dataInput.value * 40).toFixed(2);
-  } else if (select.value === "Value-4") {
-    resultInput.value = (dataInput.value * 50).toFixed(2);
-  }
+    if (select.value === "Value-1" && dataInput.value > 0) {
+      resultInput.value = (dataInput.value * 20).toFixed(2);
+    } else if (select.value === "Value-2" && (dataInput.value > 0)) {
+      resultInput.value = (dataInput.value * 30).toFixed(2);
+    } else if (select.value === "Value-3" && (dataInput.value > 0)) {
+      resultInput.value = (dataInput.value * 40).toFixed(2);
+    } else if (select.value === "Value-4" && (dataInput.value > 0)) {
+      resultInput.value = (dataInput.value * 50).toFixed(2);
+    }
+  
 };
