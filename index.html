@@ -3,25 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
-    
+    <title>Document</title>
 </head>
 <body>
-  <div class="calc-wrapp">
-    <div class="input">
-      <select id="select">
-        <option value="Value-1">Value(цена: 20)</option>
-        <option value="Value-2">Value(цена: 30)</option>
-        <option value="Value-3">Value(цена: 40)</option>
-        <option value="Value-4">Value(цена: 50)</option>
-      </select>
-      <input id="data-input">
-    </div>
-    <div class="input">
-      <p class="result-title">Результат:</p>
-      <input id="result-input" disabled>
-    </div>
-  </div>
+    <section>      
+        <div class="text1">
+        <div class="block3">
+        <p id="prodPrice"></p>
+        <input id="num2" />
+          <p> Тип товара:</p>
+           <form>
+             <select name="prodType">
+               <option value="1">Товар 1</option>
+               <option value="2">Товар 2</option>
+               <option value="3">Товар 3</option>
+             </select>
+             <div id="radios">
+               <label><input type="radio" name="prodOptions" value="option1"> Опция 1</label>
+               <label><input type="radio" name="prodOptions" value="option2"> Опция 2</label>
+               <label><input type="radio" name="prodOptions" value="option3"> Опция 3</label>
+             </div>
+             <div id="checkboxes">
+               <label><input type="checkbox" name="prop1"> Свойство 1</label>
+               <label><input type="checkbox" name="prop2"> Свойство 2</label>
+             </div>
+           </form>
+           <button type="submit" onclick="updatePrice()">Посчитать</button>
+        </div></div>
+    </section>
+    
+  
+    <script src = "6.js"></script>
+
+    
 </body>
-<script src="script.js"></script>
 </html>
