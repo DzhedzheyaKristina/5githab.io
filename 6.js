@@ -44,7 +44,7 @@ function updatePrice() {
     let num= Number(document.getElementById("num2").value);
     if(num>0){
       price= price*num;
-      prodPrice.innerHTML = price + " рублей";
+      prodPrice.innerHTML = price;
     }
     if(num<=0){
       prodPrice.innerHTML= "Не правильно введено количество";
